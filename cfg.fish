@@ -4,6 +4,8 @@ set fish_config "$HOME/.config/fish/config.fish"
 #set nvim_config "$HOME/.config/nvim"
 set ghostty_config "$HOME/.config/ghostty/config"
 set tmux_config "$HOME/.config/tmux/tmux.conf"
+set spacemacs_config "$HOME/.spacemacs"
+set spacemacs_env "$HOME/.spacemacs.env"
 
 if test "$argv[1]" = push
 	
@@ -14,4 +16,8 @@ if test "$argv[1]" = push
 	ln -sf (realpath ghostty/config) "$ghostty_config"
 
 	ln -sf (realpath tmux/tmux.conf) "$tmux_config"
+
+	ln -sf (realpath spacemacs/.spacemacs) "$spacemacs_config"
+
+	ln -sf (realpath spacemacs/.spacemacs.env) "$spacemacs_env"
 end

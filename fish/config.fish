@@ -44,7 +44,10 @@ abbr gd git defftool -y
 abbr ga git add -A
 abbr gc "git commit -m"
 abbr gp git push
-abbr gr git log
+abbr gl git log
 
 
 set -x EDITOR vim
+
+# OpenClaw Completion
+source "/home/z/.openclaw/completions/openclaw.fish"
